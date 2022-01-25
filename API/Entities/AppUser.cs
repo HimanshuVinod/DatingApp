@@ -9,5 +9,7 @@ namespace API.Entities
     {
         public int Id { get; set; } //entity framework will recognise it correctly 
         public string UserName { get; set; }//for .netcore identity 
+        public byte[] PasswordHash{get; set;}
+        public byte[] PasswordSalt { get; set; }
     }
 }
